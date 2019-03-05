@@ -15,11 +15,11 @@ const TodoList = ({ todos, addTodo, removeTodo }) => (
       {todos.map(todo => (
         <li key={todo.id}>
           {todo.text}
-          <button onClick={() => removeTodo(todo.id)}>remover</button>
+          <button onClick={() => removeTodo(todo.id)}>REMOVE</button>
         </li>
       ))}
     </ul>
-    <button onClick={() => addTodo('Nuevo todo')}>Adicionar</button>
+    <button onClick={() => addTodo('Nuevo todo')}>ADD</button>
   </Fragment>
 );
 
